@@ -23,7 +23,7 @@
 	overdueNITasks.addQuery('due_date','<=',rightNow);
 	overdueNITasks.addQuery('state','!=',3);
 
-	overdueNITasks.query();
+  
 	// Write a log message for each overdue NeedIt Task Record
 	while(overdueNITasks.next()){
 		gs.info("Overdue NeedIt Task record = " + overdueNITasks.number);
@@ -34,7 +34,7 @@ gs.eventQueue('x_58872_needit.overdueNeedItTask',overdueNITasks,overdueNITasks.n
         <sys_created_on>2018-01-31 08:40:40</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>58afdc34db401300400cd100cf961948</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Find NeedIt Overdue Tasks</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
@@ -42,7 +42,7 @@ gs.eventQueue('x_58872_needit.overdueNeedItTask',overdueNITasks,overdueNITasks.n
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sysauto_script_58afdc34db401300400cd100cf961948</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-02-01 06:18:15</sys_updated_on>
+        <sys_updated_on>2018-02-01 08:09:11</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>
